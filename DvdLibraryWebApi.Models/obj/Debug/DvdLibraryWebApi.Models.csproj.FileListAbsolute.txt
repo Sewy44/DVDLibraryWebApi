@@ -1,0 +1,6 @@
+C:\Users\Jamie\source\repos\online-net-2021-sewy44\Summatives\M9\DvdLibraryWebApi\DvdLibraryWebApi.Models\bin\Debug\DvdLibraryWebApi.Models.dll
+C:\Users\Jamie\source\repos\online-net-2021-sewy44\Summatives\M9\DvdLibraryWebApi\DvdLibraryWebApi.Models\bin\Debug\DvdLibraryWebApi.Models.pdb
+C:\Users\Jamie\source\repos\online-net-2021-sewy44\Summatives\M9\DvdLibraryWebApi\DvdLibraryWebApi.Models\obj\Debug\DvdLibraryWebApi.Models.csproj.AssemblyReference.cache
+C:\Users\Jamie\source\repos\online-net-2021-sewy44\Summatives\M9\DvdLibraryWebApi\DvdLibraryWebApi.Models\obj\Debug\DvdLibraryWebApi.Models.csproj.CoreCompileInputs.cache
+C:\Users\Jamie\source\repos\online-net-2021-sewy44\Summatives\M9\DvdLibraryWebApi\DvdLibraryWebApi.Models\obj\Debug\DvdLibraryWebApi.Models.dll
+C:\Users\Jamie\source\repos\online-net-2021-sewy44\Summatives\M9\DvdLibraryWebApi\DvdLibraryWebApi.Models\obj\Debug\DvdLibraryWebApi.Models.pdb

@@ -1,0 +1,14 @@
+C:\Users\Jamie\source\repos\online-net-2021-sewy44\Summatives\M9\DvdLibraryWebApi\DvdLibraryWebApi.Tests\bin\Debug\DvdLibraryWebApi.Tests.dll.config
+C:\Users\Jamie\source\repos\online-net-2021-sewy44\Summatives\M9\DvdLibraryWebApi\DvdLibraryWebApi.Tests\bin\Debug\DvdLibraryWebApi.Tests.dll
+C:\Users\Jamie\source\repos\online-net-2021-sewy44\Summatives\M9\DvdLibraryWebApi\DvdLibraryWebApi.Tests\bin\Debug\DvdLibraryWebApi.Tests.pdb
+C:\Users\Jamie\source\repos\online-net-2021-sewy44\Summatives\M9\DvdLibraryWebApi\DvdLibraryWebApi.Tests\bin\Debug\DvdLibraryWebApi.Data.dll
+C:\Users\Jamie\source\repos\online-net-2021-sewy44\Summatives\M9\DvdLibraryWebApi\DvdLibraryWebApi.Tests\bin\Debug\DvdLibraryWebApi.Models.dll
+C:\Users\Jamie\source\repos\online-net-2021-sewy44\Summatives\M9\DvdLibraryWebApi\DvdLibraryWebApi.Tests\bin\Debug\nunit.framework.dll
+C:\Users\Jamie\source\repos\online-net-2021-sewy44\Summatives\M9\DvdLibraryWebApi\DvdLibraryWebApi.Tests\bin\Debug\DvdLibraryWebApi.Data.pdb
+C:\Users\Jamie\source\repos\online-net-2021-sewy44\Summatives\M9\DvdLibraryWebApi\DvdLibraryWebApi.Tests\bin\Debug\DvdLibraryWebApi.Models.pdb
+C:\Users\Jamie\source\repos\online-net-2021-sewy44\Summatives\M9\DvdLibraryWebApi\DvdLibraryWebApi.Tests\bin\Debug\nunit.framework.xml
+C:\Users\Jamie\source\repos\online-net-2021-sewy44\Summatives\M9\DvdLibraryWebApi\DvdLibraryWebApi.Tests\obj\Debug\DvdLibraryWebApi.Tests.csproj.AssemblyReference.cache
+C:\Users\Jamie\source\repos\online-net-2021-sewy44\Summatives\M9\DvdLibraryWebApi\DvdLibraryWebApi.Tests\obj\Debug\DvdLibraryWebApi.Tests.csproj.CoreCompileInputs.cache
+C:\Users\Jamie\source\repos\online-net-2021-sewy44\Summatives\M9\DvdLibraryWebApi\DvdLibraryWebApi.Tests\obj\Debug\DvdLibraryWebApi.Tests.csproj.CopyComplete
+C:\Users\Jamie\source\repos\online-net-2021-sewy44\Summatives\M9\DvdLibraryWebApi\DvdLibraryWebApi.Tests\obj\Debug\DvdLibraryWebApi.Tests.dll
+C:\Users\Jamie\source\repos\online-net-2021-sewy44\Summatives\M9\DvdLibraryWebApi\DvdLibraryWebApi.Tests\obj\Debug\DvdLibraryWebApi.Tests.pdb

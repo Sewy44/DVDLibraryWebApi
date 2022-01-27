@@ -1,0 +1,9 @@
+C:\Users\Jamie\source\repos\online-net-2021-sewy44\Summatives\M9\DvdLibraryWebApi\DvdLibraryWebApi.Data\bin\Debug\DvdLibraryWebApi.Data.dll
+C:\Users\Jamie\source\repos\online-net-2021-sewy44\Summatives\M9\DvdLibraryWebApi\DvdLibraryWebApi.Data\bin\Debug\DvdLibraryWebApi.Data.pdb
+C:\Users\Jamie\source\repos\online-net-2021-sewy44\Summatives\M9\DvdLibraryWebApi\DvdLibraryWebApi.Data\bin\Debug\DvdLibraryWebApi.Models.dll
+C:\Users\Jamie\source\repos\online-net-2021-sewy44\Summatives\M9\DvdLibraryWebApi\DvdLibraryWebApi.Data\bin\Debug\DvdLibraryWebApi.Models.pdb
+C:\Users\Jamie\source\repos\online-net-2021-sewy44\Summatives\M9\DvdLibraryWebApi\DvdLibraryWebApi.Data\obj\Debug\DvdLibraryWebApi.Data.csproj.AssemblyReference.cache
+C:\Users\Jamie\source\repos\online-net-2021-sewy44\Summatives\M9\DvdLibraryWebApi\DvdLibraryWebApi.Data\obj\Debug\DvdLibraryWebApi.Data.csproj.CoreCompileInputs.cache
+C:\Users\Jamie\source\repos\online-net-2021-sewy44\Summatives\M9\DvdLibraryWebApi\DvdLibraryWebApi.Data\obj\Debug\DvdLibraryWebApi.Data.csproj.CopyComplete
+C:\Users\Jamie\source\repos\online-net-2021-sewy44\Summatives\M9\DvdLibraryWebApi\DvdLibraryWebApi.Data\obj\Debug\DvdLibraryWebApi.Data.dll
+C:\Users\Jamie\source\repos\online-net-2021-sewy44\Summatives\M9\DvdLibraryWebApi\DvdLibraryWebApi.Data\obj\Debug\DvdLibraryWebApi.Data.pdb
