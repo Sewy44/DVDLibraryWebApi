@@ -11,23 +11,23 @@ using System.Web.Http;
 
 namespace DvdLibraryWebApi.Controllers
 {
-    public class DvdController : ApiController
+    public class DVDController : ApiController
     {
 
         [Route("dvds")]
         [AcceptVerbs("GET")]
         public IHttpActionResult All()
         {
-            var model = DvdRepositoryFactory.GetRepository();
+            var model = DVDRepositoryFactory.GetRepository();
 
-            return Ok(model.GetAll());
+            return Ok(model.GetAllDVDs());
         }
 
         [Route("dvd/{dvdId}")]
         [AcceptVerbs("GET")]
         public IHttpActionResult GetDvd(int dvdId)
         {
-            var model = DvdRepositoryFactory.GetRepository();
+            var model = DVDRepositoryFactory.GetRepository();
 
             if (model == null)
             {
@@ -35,7 +35,7 @@ namespace DvdLibraryWebApi.Controllers
             }
             else
             {
-                return Ok(model.GetById(dvdId));
+                return Ok(model.GetDVDById(dvdId));
             }
         }
 
@@ -43,7 +43,7 @@ namespace DvdLibraryWebApi.Controllers
         [AcceptVerbs("GET")]
         public IHttpActionResult GetDvdByTitle(string title)
         {
-            var model = DvdRepositoryFactory.GetRepository();
+            var model = DVDRepositoryFactory.GetRepository();
 
             if (model == null)
             {
@@ -51,7 +51,7 @@ namespace DvdLibraryWebApi.Controllers
             }
             else
             {
-                return Ok(model.GetByTitle(title));
+                return Ok(model.GetDVDByTitle(title));
             }
         }
 
@@ -59,7 +59,7 @@ namespace DvdLibraryWebApi.Controllers
         [AcceptVerbs("GET")]
         public IHttpActionResult GetDvdByReleaseYear(string releaseYear)
         {
-            var model = DvdRepositoryFactory.GetRepository();
+            var model = DVDRepositoryFactory.GetRepository();
 
             if (model == null)
             {
@@ -67,7 +67,7 @@ namespace DvdLibraryWebApi.Controllers
             }
             else
             {
-                return Ok(model.GetByReleaseYear(releaseYear));
+                return Ok(model.GetDVDByReleaseYear(releaseYear));
             }
         }
 
@@ -75,7 +75,7 @@ namespace DvdLibraryWebApi.Controllers
         [AcceptVerbs("GET")]
         public IHttpActionResult GetDvdByDirector(string director)
         {
-            var model = DvdRepositoryFactory.GetRepository();
+            var model = DVDRepositoryFactory.GetRepository();
 
             if (model == null)
             {
@@ -83,7 +83,7 @@ namespace DvdLibraryWebApi.Controllers
             }
             else
             {
-                return Ok(model.GetByDirectorName(director));
+                return Ok(model.GetDVDByDirectorName(director));
             }
         }
 
@@ -91,7 +91,7 @@ namespace DvdLibraryWebApi.Controllers
         [AcceptVerbs("GET")]
         public IHttpActionResult GetDvdByRating(string rating)
         {
-            var model = DvdRepositoryFactory.GetRepository();
+            var model = DVDRepositoryFactory.GetRepository();
 
             if (model == null)
             {
@@ -99,7 +99,7 @@ namespace DvdLibraryWebApi.Controllers
             }
             else
             {
-                return Ok(model.GetByRating(rating));
+                return Ok(model.GetDVDByRating(rating));
             }
         }
         
@@ -122,8 +122,8 @@ namespace DvdLibraryWebApi.Controllers
                 Notes = request.Notes
             };
            
-            var model = DvdRepositoryFactory.GetRepository();
-            model.DvdInsert(dvd);
+            var model = DVDRepositoryFactory.GetRepository();
+            model.InsertDVD(dvd);
 
             return Created($"dvd/get/{dvd.DvdId}", dvd);
         }
@@ -137,8 +137,8 @@ namespace DvdLibraryWebApi.Controllers
                 return BadRequest(ModelState);
             }
 
-            var model = DvdRepositoryFactory.GetRepository();
-            Dvd dvd = model.GetById(request.DvdId);
+            var model = DVDRepositoryFactory.GetRepository();
+            Dvd dvd = model.GetDVDById(request.DvdId);
 
             if (dvd == null)
             {
@@ -151,7 +151,7 @@ namespace DvdLibraryWebApi.Controllers
             dvd.ReleaseYear = request.ReleaseYear;
             dvd.Notes = request.Notes;
 
-            model.DvdUpdate(dvd);
+            model.UpdateDVD(dvd);
             return Ok(dvd);
         }
 
@@ -159,7 +159,7 @@ namespace DvdLibraryWebApi.Controllers
         [AcceptVerbs("DELETE")]
         public IHttpActionResult DeleteDvd(int dvdId)
         {
-            var model = DvdRepositoryFactory.GetRepository();
+            var model = DVDRepositoryFactory.GetRepository();
 
             if (model == null)
             {
@@ -167,7 +167,7 @@ namespace DvdLibraryWebApi.Controllers
             }
             else
             {
-                model.DvdDelete(dvdId);
+                model.DeleteDVD(dvdId);
                 return Ok();
             }
         }

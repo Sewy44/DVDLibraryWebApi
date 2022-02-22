@@ -8,16 +8,16 @@ using System.Threading.Tasks;
 
 namespace DvdLibraryWebApi.Data
 {
-    public static class DvdRepositoryFactory
+    public static class DVDRepositoryFactory
     {
-        public static IDvdRepository GetRepository()
+        public static DVDRepository GetRepository()
         {
             switch (Settings.GetRepositoryType())
             {
                 case "SampleData":
-                    return new DvdRepositoryMock();
+                    return new DVDRepositoryImplementationMock();
                 case "ADO":
-                    return new DvdRepositoryADO();
+                    return new DVDRepositoryImplementationADO();
                 default:
                     throw new Exception("Could not find valid RepositoryType configuration value.");
             }

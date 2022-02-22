@@ -42,11 +42,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DvdRepositoryFactory.cs" />
-    <Compile Include="Interface\IDvdRepository.cs" />
+    <Compile Include="DVDRepositoryFactory.cs" />
+    <Compile Include="Interface\DVDRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Repositories\DvdRepositoryADO.cs" />
-    <Compile Include="Repositories\DvdRepositoryMock.cs" />
+    <Compile Include="Repositories\DVDRepositoryImplementationADO.cs" />
+    <Compile Include="Repositories\DVDRepositoryImplementationMock.cs" />
     <Compile Include="Settings.cs" />
   </ItemGroup>
   <ItemGroup>

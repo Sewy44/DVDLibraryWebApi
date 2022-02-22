@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace DvdLibraryWebApi.Data.Repositories
 {
-    public class DvdRepositoryMock : IDvdRepository
+    public class DVDRepositoryImplementationMock : DVDRepository
     {
         private static List<Dvd> _dvds = new List<Dvd>
         {
@@ -24,18 +24,18 @@ namespace DvdLibraryWebApi.Data.Repositories
             { DvdId = 5, Title="On The Waterfront", ReleaseYear = "1954", Director = "Elia Kazan", Rating = "NR", Notes = "I coulda been a contender!!" },
         };
 
-        public void DvdDelete(int dvdId)
+        public void DeleteDVD(int dvdId)
         {
             _dvds.RemoveAll(d => d.DvdId == dvdId);
         }
 
-        public void DvdInsert(Dvd dvd)
+        public void InsertDVD(Dvd dvd)
         {
             dvd.DvdId = _dvds.Max(d => d.DvdId) + 1;
             _dvds.Add(dvd);
         }
 
-        public void DvdUpdate(Dvd dvd)
+        public void UpdateDVD(Dvd dvd)
         {
             var found = _dvds.FirstOrDefault(d => d.DvdId == dvd.DvdId);
 
@@ -43,35 +43,35 @@ namespace DvdLibraryWebApi.Data.Repositories
                 found = dvd;
         }
 
-        public List<Dvd> GetAll()
+        public List<Dvd> GetAllDVDs()
         {
             return _dvds;
         }
 
-        public Dvd GetById(int dvdId)
+        public Dvd GetDVDById(int dvdId)
         { 
             return _dvds.FirstOrDefault(d => d.DvdId == dvdId);
         }
 
-        public List<Dvd> GetByRating(string ratingName)
+        public List<Dvd> GetDVDByRating(string ratingName)
         {
             var matchingRatings = _dvds.Where(r => r.Rating.Contains(ratingName));
             return matchingRatings.ToList();
         }
 
-        public List<Dvd> GetByReleaseYear(string releaseYear)
+        public List<Dvd> GetDVDByReleaseYear(string releaseYear)
         {
             var matchingReleaseYears = _dvds.Where(r => r.ReleaseYear.Contains(releaseYear));
             return matchingReleaseYears.ToList();
         }
 
-        public List<Dvd> GetByTitle(string dvdTitle)
+        public List<Dvd> GetDVDByTitle(string dvdTitle)
         {
             var matchingTitles = _dvds.Where(t => t.Title.Contains(dvdTitle));
             return matchingTitles.ToList();
         }
 
-        public List<Dvd> GetByDirectorName(string directorName)
+        public List<Dvd> GetDVDByDirectorName(string directorName)
         {
             var matchingDirectorName = _dvds.Where(d => d.Director.Contains(directorName));
             return matchingDirectorName.ToList();

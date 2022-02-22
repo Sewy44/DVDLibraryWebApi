@@ -10,9 +10,9 @@ using System.Threading.Tasks;
 
 namespace DvdLibraryWebApi.Data.Repositories
 {
-    public class DvdRepositoryADO : IDvdRepository
+    public class DVDRepositoryImplementationADO : DVDRepository
     {
-        public void DvdDelete(int dvdId)
+        public void DeleteDVD(int dvdId)
         {
             using (var cn = new SqlConnection(Settings.GetConnectionString()))
             {
@@ -27,7 +27,7 @@ namespace DvdLibraryWebApi.Data.Repositories
             }
         }
 
-        public void DvdInsert(Dvd dvd)
+        public void InsertDVD(Dvd dvd)
         {
             using(var cn = new SqlConnection(Settings.GetConnectionString()))
             {
@@ -53,7 +53,7 @@ namespace DvdLibraryWebApi.Data.Repositories
             }
         }
 
-        public void DvdUpdate(Dvd dvd)
+        public void UpdateDVD(Dvd dvd)
         {
             using (var cn = new SqlConnection(Settings.GetConnectionString()))
             {
@@ -72,7 +72,7 @@ namespace DvdLibraryWebApi.Data.Repositories
                 cmd.ExecuteNonQuery();
             }
         }
-        public List<Dvd> GetAll()
+        public List<Dvd> GetAllDVDs()
         {
             List<Dvd> dvds = new List<Dvd>();
 
@@ -105,7 +105,7 @@ namespace DvdLibraryWebApi.Data.Repositories
             return dvds;
         }
 
-        public List<Dvd> GetByDirectorName(string directorName)
+        public List<Dvd> GetDVDByDirectorName(string directorName)
         {
             List<Dvd> dvds = new List<Dvd>();
 
@@ -136,7 +136,7 @@ namespace DvdLibraryWebApi.Data.Repositories
             return dvds;
         }
 
-        public Dvd GetById(int dvdId)
+        public Dvd GetDVDById(int dvdId)
         {
             Dvd dvd = null;
             using (var cn = new SqlConnection(Settings.GetConnectionString()))
@@ -164,7 +164,7 @@ namespace DvdLibraryWebApi.Data.Repositories
             return dvd;
         }
 
-        public List<Dvd> GetByRating(string ratingName)
+        public List<Dvd> GetDVDByRating(string ratingName)
         {
             List<Dvd> dvds = new List<Dvd>();
 
@@ -195,7 +195,7 @@ namespace DvdLibraryWebApi.Data.Repositories
             return dvds;
         }
 
-        public List<Dvd> GetByReleaseYear(string releaseYear)
+        public List<Dvd> GetDVDByReleaseYear(string releaseYear)
         {
             List<Dvd> dvds = new List<Dvd>();
 
@@ -226,7 +226,7 @@ namespace DvdLibraryWebApi.Data.Repositories
             return dvds;
         }
 
-        public List<Dvd> GetByTitle(string title)
+        public List<Dvd> GetDVDByTitle(string title)
         {
             List<Dvd> dvds = new List<Dvd>();
 
